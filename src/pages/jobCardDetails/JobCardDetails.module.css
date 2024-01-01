@@ -1,0 +1,48 @@
+/* JobCard.module.css */
+
+.detailsContainer {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 110vh; /* Make the container take the full height of the viewport */
+  background-color: #f0f0f0; /* Add a background color, adjust as needed */
+}
+
+.stretchedLogo {
+  width: 90%;
+  height: 50vh; /* Adjust the height as needed */
+  object-fit: cover;
+  border-radius: 0.5em;
+}
+
+.content {
+  padding: 20px;
+  text-align: center;
+  max-width: 600px; /* Limit the width of the content */
+}
+
+.title {
+  font-size: 1.5em; /* Increase the font size for the title */
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.company {
+  font-size: 1.2.5em; /* Increase the font size for the company name */
+  margin-bottom: 5px;
+}
+
+.position {
+  font-size: 1em; /* Increase the font size for the position */
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 1em;
+  line-height: 1.6; /* Improve readability with increased line height */
+}
+
+/* Any additional styles you want to customize can be added here */

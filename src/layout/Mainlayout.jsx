@@ -18,6 +18,7 @@ const Mainlayout = () => {
           color: 'white',
           textAlign: 'center',
           padding: '10px',
+          marginTop: '2em',
         }}
       >
         <Footer />

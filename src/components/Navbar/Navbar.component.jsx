@@ -7,7 +7,7 @@ const Navbar = () => {
     <nav className={styles.nav}>
       <div className={styles.wrapper}>
         <div className={styles.logo}>
-          <a href='#'>Logo</a>
+          <a href='#'>Halal Jibika</a>
         </div>
         <input type='checkbox' id='menu-btn' className={styles.menuBtn} />
         <label htmlFor='menu-btn' className={`${styles.btn} ${styles.menuBtn}`}>
@@ -28,6 +28,9 @@ const Navbar = () => {
           </li>
           <li>
             <NavLink to='/contact'>Contact</NavLink>
+          </li>
+          <li>
+            <NavLink to='/postjob'>Post Job</NavLink>
           </li>
         </ul>
       </div>

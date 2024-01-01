@@ -1,0 +1,44 @@
+/* Hero.module.css */
+
+.hero {
+  background-color: #fff;
+  color: #000;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.heroContent {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.mainText {
+  font-size: 2em;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.tagline {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 1em;
+  margin-bottom: 30px;
+}
+
+.exploreButton {
+  padding: 10px 20px;
+  font-size: 1.2em;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.exploreButton:hover {
+  background-color: #333;
+}
