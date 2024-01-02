@@ -4,11 +4,14 @@ import App from './App.jsx'
 import { RouterProvider } from 'react-router-dom'
 import routes from './router/router.jsx'
 import './index.css'
+import JobContextProvider from './context/JobContext.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <RouterProvider router={routes}>
-      <App />
-    </RouterProvider>
+    <JobContextProvider>
+      <RouterProvider router={routes}>
+        <App />
+      </RouterProvider>
+    </JobContextProvider>
   </React.StrictMode>
 )

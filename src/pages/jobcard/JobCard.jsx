@@ -40,7 +40,9 @@ const JobCard = ({ job }) => {
               <Link to={`/jobcarddetails/${id}`}>Details</Link>
             </span>
             <div className={styles.iconGroup}>
-              <span>update</span>
+              <span>
+                <Link to={`/updatecarddetails/${id}`}>update</Link>
+              </span>
               <span>delete</span>
             </div>
           </div>

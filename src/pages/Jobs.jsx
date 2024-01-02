@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import axios from 'axios'
-import JobCard from './Home/jobcard/JobCard'
+import JobCard from './jobcard/JobCard'
 
 const Jobs = () => {
   const [jobData, setJobData] = useState(null)

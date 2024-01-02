@@ -21,7 +21,7 @@ const Mainlayout = () => {
           marginTop: '2em',
         }}
       >
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </>
   )

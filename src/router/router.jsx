@@ -1,13 +1,13 @@
 import { createBrowserRouter } from 'react-router-dom'
 
 import Jobs from '../pages/Jobs'
-import About from '../pages/About'
+import About from '../pages/About/About'
 import App from '../App'
 import Home from '../pages/Home/Home'
-import Contact from '../pages/contact/Contact'
 import axios from 'axios'
 import JobCardDetails from '../pages/jobCardDetails/JobCardDetails'
 import PostJobsForm from '../pages/PostJobsForm.jsx/PostJobsForm'
+import UpdateCardDetails from '../pages/updatePost/UpdateCardDetails'
 
 const routes = createBrowserRouter([
   {
@@ -33,12 +33,10 @@ const routes = createBrowserRouter([
         element: <PostJobsForm />,
       },
       {
-        path: '/about',
-        element: <About />,
-      },
-      {
-        path: '/contact',
-        element: <Contact />,
+        path: '/updatecarddetails/:updateId',
+        element: <UpdateCardDetails />,
+        loader: ({ params }) =>
+          axios.get(`http://localhost:9000/jobs/${params.updateId}`),
       },
       {
         path: '/about',
