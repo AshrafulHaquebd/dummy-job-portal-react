@@ -1,8 +1,9 @@
 import React from 'react'
-import { useLoaderData } from 'react-router-dom'
+import { useLoaderData, useNavigate } from 'react-router-dom'
 import styles from './JobCardDetails.module.css' // Make sure to import your CSS file
 
 const JobCardDetails = () => {
+  const navigate = useNavigate()
   const jobData = useLoaderData()
 
   if (!jobData.data) {
@@ -24,6 +25,7 @@ const JobCardDetails = () => {
         <p className={styles.position}>{position}</p>
         <p className={styles.description}>{description}</p>
       </div>
+      <button onClick={() => navigate(-1)}>Go back</button>
     </div>
   )
 }

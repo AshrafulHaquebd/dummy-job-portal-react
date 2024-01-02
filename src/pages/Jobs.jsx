@@ -21,6 +21,10 @@ const Jobs = () => {
     fetchData()
   }, [])
 
+  const handleDelete = (deleteId) => {
+    setJobData((prevJobs) => prevJobs.filter((job) => job.id !== deleteId))
+  }
+
   if (loading) {
     return (
       <p>
@@ -32,7 +36,10 @@ const Jobs = () => {
   return (
     <>
       <h2>Available Jobs</h2>
-      {jobData && jobData.map((job) => <JobCard job={job} key={job.id} />)}
+      {jobData &&
+        jobData.map((job) => (
+          <JobCard job={job} key={job.id} onDelete={handleDelete} />
+        ))}
     </>
   )
 }
