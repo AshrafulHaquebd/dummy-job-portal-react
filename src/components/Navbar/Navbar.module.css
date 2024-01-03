@@ -1,8 +1,14 @@
 .nav {
   position: fixed;
-  z-index: 99;
+  top: 0;
+  left: 0;
   width: 100%;
-  background: #242526;
+  background-color: #242526; /* Adjust the background color as needed */
+  z-index: 1000; /* Adjust the z-index if needed */
+}
+
+.fixed {
+  position: fixed;
 }
 
 .nav .wrapper {

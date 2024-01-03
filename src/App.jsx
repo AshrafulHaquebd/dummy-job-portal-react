@@ -1,4 +1,4 @@
-// import './App.css'
+import './App.css'
 import Mainlayout from './layout/Mainlayout'
 
 function App() {

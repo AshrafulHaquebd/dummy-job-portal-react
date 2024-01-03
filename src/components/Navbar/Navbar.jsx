@@ -1,6 +1,6 @@
 import { Link, NavLink } from 'react-router-dom'
 import { FaBarsStaggered, FaXmark } from 'react-icons/fa6'
-import styles from './Navbar.component.module.css'
+import styles from './Navbar.module.css'
 
 const Navbar = () => {
   return (
@@ -25,6 +25,9 @@ const Navbar = () => {
           </li>
           <li>
             <NavLink to='/postjob'>Post Job</NavLink>
+          </li>
+          <li>
+            <NavLink to='/signin'>Login</NavLink>
           </li>
         </ul>
       </div>

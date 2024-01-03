@@ -1,0 +1,30 @@
+/* Footer.module.css */
+
+.footer {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: auto;
+}
+
+.socialIcons {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.iconLink {
+  display: inline-block;
+  margin: 0 10px;
+  font-size: 24px;
+  color: white;
+  text-decoration: none;
+}
+
+.copyright {
+  margin: 0;
+  font-size: 14px;
+}
+
+/* Add more styling as needed */

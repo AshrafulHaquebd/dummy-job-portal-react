@@ -47,7 +47,6 @@ const UpdateCardDetails = () => {
             type='text'
             id='title'
             name='title'
-            // defaultValue={title}
             value={formData.title}
             onChange={handleChange}
           />
@@ -59,7 +58,6 @@ const UpdateCardDetails = () => {
             type='text'
             id='logo'
             name='logo'
-            // defaultValue={logo}
             value={formData.logo}
             onChange={handleChange}
           />
@@ -71,7 +69,6 @@ const UpdateCardDetails = () => {
             type='text'
             id='companyName'
             name='companyName'
-            // defaultValue={companyName}
             value={formData.companyName}
             onChange={handleChange}
           />
@@ -83,7 +80,6 @@ const UpdateCardDetails = () => {
             type='text'
             id='position'
             name='position'
-            // defaultValue={position}
             value={formData.position}
             onChange={handleChange}
           />
@@ -94,7 +90,6 @@ const UpdateCardDetails = () => {
           <textarea
             id='description'
             name='description'
-            // defaultValue={description}
             value={formData.description}
             onChange={handleChange}
           />

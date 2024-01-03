@@ -7,7 +7,7 @@ const JobCardDetails = () => {
   const jobData = useLoaderData()
 
   if (!jobData.data) {
-    return null // or display a loading/error message
+    return null
   }
 
   const { logo, companyName, title, position, description } = jobData.data

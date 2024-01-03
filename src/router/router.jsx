@@ -8,6 +8,7 @@ import axios from 'axios'
 import JobCardDetails from '../pages/jobCardDetails/JobCardDetails'
 import PostJobsForm from '../pages/PostJobsForm.jsx/PostJobsForm'
 import UpdateCardDetails from '../pages/updatePost/UpdateCardDetails'
+import SignInForm from '../pages/signin/SignInForm'
 
 const routes = createBrowserRouter([
   {
@@ -39,8 +40,8 @@ const routes = createBrowserRouter([
           axios.get(`http://localhost:9000/jobs/${params.updateId}`),
       },
       {
-        path: '/about',
-        element: <About />,
+        path: '/signin',
+        element: <SignInForm />,
       },
     ],
   },
