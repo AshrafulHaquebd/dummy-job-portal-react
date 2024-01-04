@@ -3,8 +3,8 @@
   top: 0;
   left: 0;
   width: 100%;
-  background-color: #242526; /* Adjust the background color as needed */
-  z-index: 1000; /* Adjust the z-index if needed */
+  background-color: #242526;
+  z-index: 1000;
 }
 
 .fixed {

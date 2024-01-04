@@ -1,7 +1,6 @@
 import { createBrowserRouter } from 'react-router-dom'
 
 import Jobs from '../pages/Jobs'
-import About from '../pages/About/About'
 import App from '../App'
 import Home from '../pages/Home/Home'
 import axios from 'axios'

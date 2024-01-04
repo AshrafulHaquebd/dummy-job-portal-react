@@ -1,7 +1,7 @@
-// Hero.js (Hero Component)
-
 import React from 'react'
 import styles from './Hero.module.css'
+import { Link } from 'react-router-dom'
+import LatestJob from '../latestJob/LatestJob'
 
 const Hero = () => {
   return (
@@ -20,7 +20,11 @@ const Hero = () => {
           workplace culture that respects and values diversity. Join us in
           shaping a future where your career is a reflection of your beliefs.
         </p>
-        <button className={styles.exploreButton}>Explore Now</button>
+        <Link to={'/jobs'}>
+          <button className={styles.exploreButton}>Explore Now</button>
+        </Link>
+
+        <LatestJob />
       </div>
     </div>
   )

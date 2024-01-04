@@ -1,5 +1,3 @@
-// JobCard.js (Job Card Component)
-
 import React, { useState } from 'react'
 import styles from './JobCard.module.css'
 import { Link } from 'react-router-dom'

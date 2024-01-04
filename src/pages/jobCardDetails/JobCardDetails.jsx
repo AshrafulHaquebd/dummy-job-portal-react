@@ -1,6 +1,6 @@
 import React from 'react'
 import { useLoaderData, useNavigate } from 'react-router-dom'
-import styles from './JobCardDetails.module.css' // Make sure to import your CSS file
+import styles from './JobCardDetails.module.css'
 
 const JobCardDetails = () => {
   const navigate = useNavigate()
@@ -20,10 +20,10 @@ const JobCardDetails = () => {
         className={styles.stretchedLogo}
       />
       <div className={styles.content}>
-        <h2 className={styles.title}>{title}</h2>
-        <p className={styles.company}>{companyName}</p>
-        <p className={styles.position}>{position}</p>
-        <p className={styles.description}>{description}</p>
+        <h2 className={styles.title}> {title}</h2>
+        <p className={styles.company}>Company: {companyName}</p>
+        <p className={styles.position}>Position: {position}</p>
+        <p className={styles.description}>Description: {description}</p>
       </div>
       <button onClick={() => navigate(-1)}>Go back</button>
     </div>

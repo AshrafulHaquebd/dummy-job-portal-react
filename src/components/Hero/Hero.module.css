@@ -1,9 +1,7 @@
-/* Hero.module.css */
-
 .hero {
   background-color: #fff;
   color: #000;
-  padding: 100px 20px;
+  padding: 50px 20px;
   text-align: center;
 }
 
@@ -15,7 +13,7 @@
 .mainText {
   font-size: 2em;
   margin-bottom: 20px;
-  font-weight: bold;
+  font-weight: 800;
 }
 
 .tagline {
@@ -29,6 +27,7 @@
 }
 
 .exploreButton {
+  max-width: 200px;
   padding: 10px 20px;
   font-size: 1.2em;
   background-color: #000;
@@ -41,4 +40,33 @@
 
 .exploreButton:hover {
   background-color: #333;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 600px) {
+  .hero {
+    padding: 30px 10px;
+  }
+
+  .mainText {
+    font-size: 1.5em;
+    margin-bottom: 15px;
+  }
+
+  .tagline {
+    font-size: 1em;
+    margin-bottom: 15px;
+  }
+
+  .description {
+    font-size: 0.9em;
+    margin-bottom: 20px;
+  }
+
+  .exploreButton {
+    max-width: 150px;
+    padding: 8px 15px;
+    font-size: 1em;
+  }
 }

@@ -5,7 +5,6 @@ import axios from 'axios'
 
 const UpdateCardDetails = () => {
   const updatedData = useLoaderData()
-  console.log(updatedData)
   const navigate = useNavigate()
 
   const { id } = updatedData.data

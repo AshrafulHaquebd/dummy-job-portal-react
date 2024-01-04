@@ -10,7 +10,7 @@ const Jobs = () => {
     const fetchData = async () => {
       try {
         const { data } = await axios.get('http://localhost:9000/jobs')
-        // const data = res.data
+
         setJobData(data)
       } catch (error) {
         console.log(`Error: ${error.message}, Error code: ${error.code}`)

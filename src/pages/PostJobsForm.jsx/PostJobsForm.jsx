@@ -1,5 +1,3 @@
-// PostJobsForm.jsx
-
 import React, { useContext, useState } from 'react'
 import axios from 'axios'
 import styles from './PostJobsForm.module.css'
@@ -36,7 +34,6 @@ const PostJobsForm = () => {
     try {
       const response = await axios.post('http://localhost:9000/jobs', formData)
       clearPostInput()
-      // console.log('Job posted successfully:', response.data)
     } catch (error) {
       console.error('Error posting job:', error)
     }

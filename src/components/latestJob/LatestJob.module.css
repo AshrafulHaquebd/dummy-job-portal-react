@@ -1,0 +1,58 @@
+.latestJobs {
+  margin-top: 80px;
+}
+
+.jobCards {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+  margin-top: 20px;
+}
+
+.jobCard {
+  border: 1px solid #000;
+  width: 220px;
+}
+
+.logo {
+  width: 100%;
+  max-height: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  border-bottom: 2px;
+}
+
+.jobInfo {
+  font-size: 0.9em;
+}
+
+.position {
+  display: inline-block;
+  font-size: 0.8em;
+  padding: 0.4em 0.8em;
+  background-color: lightgray;
+  color: black;
+  border-radius: 4px;
+}
+
+.company {
+  margin-top: 5px;
+}
+
+.description {
+  margin-top: 1em;
+}
+
+.findMoreButton {
+  display: inline-block;
+  color: #252525;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  text-transform: lowercase;
+  margin-top: 1em;
+  text-decoration: underline;
+}
+
+.findMoreButton:hover {
+  color: #131313;
+}
