@@ -37,7 +37,11 @@ const routes = createBrowserRouter([
       },
       {
         path: '/postjob',
-        element: <PostJobsForm />,
+        element: (
+          <PrivateRoute>
+            <PostJobsForm />
+          </PrivateRoute>
+        ),
       },
       {
         path: '/updatecarddetails/:updateId',
