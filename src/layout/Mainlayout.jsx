@@ -1,4 +1,4 @@
-import { Outlet } from 'react-router-dom'
+import { Outlet, ScrollRestoration } from 'react-router-dom'
 import Footer from './footer/Footer'
 import Navbar from '../components/Navbar/Navbar'
 
@@ -6,6 +6,7 @@ const Mainlayout = () => {
   return (
     <>
       <Navbar />
+      <ScrollRestoration />
       <div
         style={{
           paddingTop: '90px',

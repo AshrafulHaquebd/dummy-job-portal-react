@@ -66,4 +66,20 @@ button {
   text-align: center;
 }
 
-/* Add more styling as needed */
+.small {
+  text-align: center;
+  font-size: 12px;
+}
+
+.errorText {
+  color: red;
+}
+
+.altText {
+  text-align: center;
+}
+
+.altText a {
+  font-weight: bold;
+  text-decoration: underline;
+}

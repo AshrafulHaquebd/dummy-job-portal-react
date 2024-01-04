@@ -35,11 +35,21 @@ const Jobs = () => {
 
   return (
     <>
-      <h2 style={{ textAlign: 'center' }}>Available Jobs - {jobData.length}</h2>
-      {jobData &&
+      <h2 style={{ textAlign: 'center' }}>
+        Available Jobs - {jobData?.length}
+      </h2>
+      {jobData ? (
         jobData.map((job) => (
           <JobCard job={job} key={job.id} onDelete={handleDelete} />
-        ))}
+        ))
+      ) : (
+        <p className={{ textAlign: 'center' }}>
+          <strong>
+            Having problem fetching the data. Plz start the server and try
+            again.
+          </strong>
+        </p>
+      )}
     </>
   )
 }

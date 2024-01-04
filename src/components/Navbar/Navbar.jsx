@@ -1,8 +1,18 @@
 import { Link, NavLink } from 'react-router-dom'
 import { FaBarsStaggered, FaXmark } from 'react-icons/fa6'
 import styles from './Navbar.module.css'
+import { useAuthState } from 'react-firebase-hooks/auth'
+import { signOut } from 'firebase/auth'
+import { auth } from '../../firebase/firebase.config'
 
 const Navbar = () => {
+  const [user] = useAuthState(auth)
+  console.log(user)
+
+  const handleLogout = () => {
+    signOut(auth)
+  }
+
   return (
     <nav className={styles.nav}>
       <div className={styles.wrapper}>
@@ -26,9 +36,25 @@ const Navbar = () => {
           <li>
             <NavLink to='/postjob'>Post Job</NavLink>
           </li>
-          <li>
-            <NavLink to='/signin'>Login</NavLink>
-          </li>
+
+          {user ? (
+            <>
+              <li>
+                <NavLink onClick={handleLogout}>Logout</NavLink>
+              </li>
+              <li>
+                <img
+                  src={user?.photoURL}
+                  alt='profileImg'
+                  className={styles.profileImg}
+                />
+              </li>
+            </>
+          ) : (
+            <li>
+              <NavLink to='/signup'>Register</NavLink>
+            </li>
+          )}
         </ul>
       </div>
     </nav>

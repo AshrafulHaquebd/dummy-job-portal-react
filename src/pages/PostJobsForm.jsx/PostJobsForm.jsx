@@ -3,6 +3,7 @@
 import React, { useContext, useState } from 'react'
 import axios from 'axios'
 import styles from './PostJobsForm.module.css'
+import { useNavigate } from 'react-router-dom'
 
 const initialFormData = {
   title: '',
@@ -18,6 +19,8 @@ const PostJobsForm = () => {
   const clearPostInput = () => {
     setFormData(initialFormData)
   }
+
+  const navigate = useNavigate()
 
   const handleChange = (e) => {
     const { name, value } = e.target
@@ -37,6 +40,8 @@ const PostJobsForm = () => {
     } catch (error) {
       console.error('Error posting job:', error)
     }
+
+    navigate('/jobs')
   }
 
   return (

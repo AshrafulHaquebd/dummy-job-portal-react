@@ -6,7 +6,6 @@ import { Link } from 'react-router-dom'
 import axios from 'axios'
 
 const JobCard = ({ job, onDelete }) => {
-  console.log(job)
   if (!job) {
     return null
   }

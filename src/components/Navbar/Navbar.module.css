@@ -16,7 +16,6 @@
   max-width: 1300px;
   padding: 0px 30px;
   height: 70px;
-  line-height: 70px;
   margin: auto;
   display: flex;
   align-items: center;
@@ -62,6 +61,13 @@
 
 .menuBtn {
   display: none;
+}
+
+.profileImg {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 @media screen and (max-width: 768px) {
