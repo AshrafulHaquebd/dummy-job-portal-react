@@ -9,6 +9,7 @@ import PostJobsForm from '../pages/PostJobsForm.jsx/PostJobsForm'
 import UpdateCardDetails from '../pages/updatePost/UpdateCardDetails'
 import SignUpForm from '../pages/signup/SignUpForm'
 import LoginForm from '../pages/login/LoginForm'
+import PrivateRoute from './PrivateRoute'
 
 const routes = createBrowserRouter([
   {
@@ -21,7 +22,12 @@ const routes = createBrowserRouter([
       },
       {
         path: '/jobs',
-        element: <Jobs />,
+
+        element: (
+          <PrivateRoute>
+            <Jobs />
+          </PrivateRoute>
+        ),
       },
       {
         path: '/jobcarddetails/:jobId',

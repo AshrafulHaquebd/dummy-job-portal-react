@@ -25,7 +25,9 @@ const JobCardDetails = () => {
         <p className={styles.position}>Position: {position}</p>
         <p className={styles.description}>Description: {description}</p>
       </div>
-      <button onClick={() => navigate(-1)}>Go back</button>
+      <button onClick={() => navigate(-1)} className={styles.goBack}>
+        Go back
+      </button>
     </div>
   )
 }

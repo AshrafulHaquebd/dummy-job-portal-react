@@ -10,7 +10,7 @@ const LatestJob = () => {
     const fetchLatestJobs = async () => {
       try {
         const response = await axios.get('http://localhost:9000/jobs')
-        setLatestJobs(response.data.slice(0, 5))
+        setLatestJobs(response.data.slice(0, 4))
       } catch (error) {
         console.error('Error fetching latest jobs:', error)
       }
